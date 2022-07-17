@@ -10,3 +10,6 @@ class Kofemolka(pydantic.BaseModel):
     id: int
     price: int
     name: str
+
+    class Config:
+        orm_mode = True
